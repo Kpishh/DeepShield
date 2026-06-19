@@ -11,10 +11,7 @@ os.makedirs("static/heatmaps", exist_ok=True)
 os.makedirs("static/uploads", exist_ok=True)
 os.makedirs("ml/models/saved", exist_ok=True)
 
-allow_origins=[
-    "http://localhost:5173",
-    "https://deepshield-nine.vercel.app/",  # replace with real URL
-],
+
 
 app = FastAPI(
     title="DeepShield API",
@@ -25,8 +22,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "https://your-app.vercel.app",  # update after Vercel deploy
+    "http://localhost:5173",
+    "https://deepshield-nine.vercel.app/", 
     ],
     allow_credentials=True,
     allow_methods=["*"],
