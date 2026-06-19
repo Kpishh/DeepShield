@@ -1,34 +1,34 @@
-# 🛡️ DeepShield — AI-Generated Media Detection System
+#  DeepShield — AI-Generated Media Detection System
 
-![DeepShield Banner](docs/banner.png)
+
 
 > A production-grade AI system that detects whether images are AI-generated or authentic, with visual explainability via Grad-CAM heatmaps.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black)](https://your-app.vercel.app)
+<!-- [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black)](https://your-app.vercel.app)
 [![Backend](https://img.shields.io/badge/Backend-Render-blue)](https://your-backend.onrender.com/docs)
 [![Accuracy](https://img.shields.io/badge/Accuracy-99.91%25-brightgreen)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow)]()
+[![License](https://img.shields.io/badge/License-MIT-yellow)]() -->
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 With the rapid rise of generative AI (GANs, diffusion models, deepfakes), distinguishing real from AI-generated media has become critical for digital trust, journalism, and identity verification.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔍 **AI Detection** — Classifies images as AI-Generated or Authentic
-- 📊 **Confidence Score** — Probability breakdown for each prediction
-- 🧠 **Grad-CAM Explainability** — Visual heatmaps showing why the model made its decision
-- 📁 **History Dashboard** — All past predictions stored in database
-- 🎥 **Video Support** — Frame-by-frame analysis with majority voting
-- ⚡ **Fast Inference** — Model cached in memory for low latency
+-  **AI Detection** — Classifies images as AI-Generated or Authentic
+-  **Confidence Score** — Probability breakdown for each prediction
+-  **Grad-CAM Explainability** — Visual heatmaps showing why the model made its decision
+-  **History Dashboard** — All past predictions stored in database
+-  **Video Support** — Frame-by-frame analysis with majority voting
+-  **Fast Inference** — Model cached in memory for low latency
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
 
 │   React Frontend │────▶│  FastAPI Backend  │────▶│ EfficientNet-B4 │
@@ -46,7 +46,7 @@ With the rapid rise of generative AI (GANs, diffusion models, deepfakes), distin
 
 ---
 
-## 🤖 Model Performance
+##  Model Performance
 
 | Metric | Score |
 |--------|-------|
@@ -59,7 +59,7 @@ With the rapid rise of generative AI (GANs, diffusion models, deepfakes), distin
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -73,7 +73,7 @@ With the rapid rise of generative AI (GANs, diffusion models, deepfakes), distin
 
 ---
 
-## 🚀 Local Setup
+##  Local Setup
 
 ### Prerequisites
 - Python 3.11+
@@ -109,7 +109,7 @@ http://localhost:5173
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 deepshield/
 
 ├── backend/          # FastAPI backend
@@ -144,27 +144,13 @@ deepshield/
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Optimized for GAN-generated face detection (StyleGAN)
 - Diffusion model images (Midjourney, DALL-E 3) remain challenging — an active research problem across the industry
 - Video analysis uses frame sampling (not full temporal analysis)
 
 ---
-
-## 🗺️ Roadmap
-
-- [ ] Diffusion model detection support
-- [ ] Multi-face video deepfake detection
-- [ ] Browser extension
-- [ ] API rate limiting + authentication
-- [ ] Mobile app
-
----
-
-## 👨‍💻 Author
-
-Built by **Sahne** as a flagship portfolio project demonstrating ML engineering, full-stack development, and production deployment.
 
 ---
 
