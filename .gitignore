@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+*.egg-info/
+
+# Model files (too large)
+*.pth
+*.onnx
+*.pt
+
+# Data
+ml/data/raw/
+ml/data/processed/
+ml/*.zip
+
+# Database
+*.db
+
+# Node
+node_modules/
+dist/
+.env.local
+.env.production
+
+# Static uploads
+backend/static/uploads/
+backend/static/heatmaps/
+
+# OS
+.DS_Store
+*.log
+Thumbs.db
+
