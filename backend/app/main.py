@@ -11,6 +11,11 @@ os.makedirs("static/heatmaps", exist_ok=True)
 os.makedirs("static/uploads", exist_ok=True)
 os.makedirs("ml/models/saved", exist_ok=True)
 
+allow_origins=[
+    "http://localhost:5173",
+    "https://deepshield-nine.vercel.app/",  # replace with real URL
+],
+
 app = FastAPI(
     title="DeepShield API",
     description="AI-Generated Media Detection System",
