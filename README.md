@@ -82,7 +82,7 @@ With the rapid rise of generative AI (GANs, diffusion models, deepfakes), distin
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/deepshield.git
+git clone https://github.com/Kpishh/deepshield.git
 cd deepshield
 ```
 
