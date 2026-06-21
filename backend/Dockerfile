@@ -2,7 +2,6 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install system dependencies
 RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     libgl1 \
@@ -19,6 +18,7 @@ COPY . .
 
 RUN mkdir -p static/uploads static/heatmaps ml/models/saved
 
-EXPOSE 8000
+# HuggingFace uses port 7860
+EXPOSE 7860
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]

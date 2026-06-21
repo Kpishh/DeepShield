@@ -112,20 +112,6 @@ export default function Home() {
               </div>
             )}
 
-            {/* Stats Cards */}
-            <div className="grid grid-cols-3 gap-3">
-              {[
-                { label: "Model", value: "EfficientNet-B4" },
-                { label: "Accuracy", value: "97.93%" },
-                { label: "Method", value: "Grad-CAM" },
-              ].map(stat => (
-                <div key={stat.label}
-                  className="rounded-xl bg-gray-900 border border-gray-800 p-3 text-center">
-                  <p className="text-cyan-400 font-bold text-sm">{stat.value}</p>
-                  <p className="text-gray-600 text-xs mt-0.5">{stat.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

@@ -23,7 +23,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
     "http://localhost:5173",
-    "https://deepshield-nine.vercel.app/", 
+    "https://deepshield-nine.vercel.app/",
+    "https://huggingface.co",
+    "https://your-username-deepshield.hf.space",
     ],
     allow_credentials=True,
     allow_methods=["*"],
