@@ -50,7 +50,7 @@ export default function Home() {
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Upload any image and DeepShield's neural network will detect if it was
-            created by AI — with visual explainability showing exactly why.
+            created by AI - with visual explainability showing exactly why.
           </p>
         </div>
 
