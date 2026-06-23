@@ -12,7 +12,7 @@ export default function History() {
         const data = await getHistory(50)
         setHistory(data.history)
       } catch {
-        setError("Could not load history. Is the backend running?")
+        setError("Could not load history :(")
       } finally {
         setLoading(false)
       }
