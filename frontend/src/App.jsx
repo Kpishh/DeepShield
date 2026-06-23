@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom"
 import Home from "./pages/Home"
-import History from "./pages/History"
+
 
 function NavBar() {
   const location = useLocation()
@@ -30,16 +30,6 @@ function NavBar() {
           >
             Detect
           </Link>
-          <Link
-            to="/history"
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-              location.pathname === "/history"
-                ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/30"
-                : "text-gray-400 hover:text-white hover:bg-white/5"
-            }`}
-          >
-            History
-          </Link>
         </div>
       </div>
     </nav>
@@ -53,7 +43,6 @@ export default function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/history" element={<History />} />
         </Routes>
       </div>
     </Router>

@@ -54,6 +54,39 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Limitations & Coming Soon Banner */}
+        <div className="mt-6 max-w-2xl mx-auto space-y-3">
+          
+          {/* Current Limitation */}
+          <div className="flex items-start gap-3 bg-yellow-500/10 border border-yellow-500/20 
+            rounded-xl px-4 py-3 text-left">
+            <span className="text-yellow-400 mt-0.5">⚠️</span>
+            <p className="text-yellow-300/80 text-sm">
+              <span className="font-semibold text-yellow-400">Current limitation:</span> DeepShield 
+              is optimized for detecting GAN-generated faces (e.g. 
+              <a href="https://thispersondoesnotexist.com" target="_blank" 
+                className="underline ml-1 hover:text-yellow-300">
+                thispersondoesnotexist.com
+              </a>). 
+              Detection of latest diffusion-based images (ChatGPT, Claude, etc) 
+              is an active area of improvement.
+            </p>
+          </div>
+
+          {/* Coming Soon */}
+          <div className="flex items-start gap-3 bg-cyan-500/10 border border-cyan-500/20 
+            rounded-xl px-4 py-3 text-left">
+            <span className="text-cyan-400 mt-0.5">🚀</span>
+            <p className="text-cyan-300/80 text-sm">
+              <span className="font-semibold text-cyan-400">Coming soon:</span> Diffusion model 
+              detection, user accounts with private history, video deepfake analysis, 
+              and browser extension.
+            </p>
+          </div>
+
+        </div>
+
+
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Left — Upload */}
