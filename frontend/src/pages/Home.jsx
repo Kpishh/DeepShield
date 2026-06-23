@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         {/* Limitations & Coming Soon Banner */}
-        <div className="mt-6 max-w-2xl mx-auto space-y-3">
+        <div className="mt-6 max-w-2xl mx-auto space-y-3 mb-8">
           
           {/* Current Limitation */}
           <div className="flex items-start gap-3 bg-yellow-500/10 border border-yellow-500/20 
